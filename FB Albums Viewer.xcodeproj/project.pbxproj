@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860BEB29D308D9363EEB1F8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6403DC2BDC41B456BF28884A /* libPods.a */; };
 		94FEDA8319E9FFCB0047DDC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDA8219E9FFCB0047DDC0 /* main.m */; };
 		94FEDA8619E9FFCB0047DDC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDA8519E9FFCB0047DDC0 /* AppDelegate.m */; };
-		94FEDA8919E9FFCB0047DDC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDA8819E9FFCB0047DDC0 /* ViewController.m */; };
+		94FEDA8919E9FFCB0047DDC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDA8819E9FFCB0047DDC0 /* LoginViewController.m */; };
 		94FEDA8C19E9FFCB0047DDC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FEDA8A19E9FFCB0047DDC0 /* Main.storyboard */; };
 		94FEDA8E19E9FFCB0047DDC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FEDA8D19E9FFCB0047DDC0 /* Images.xcassets */; };
-		94FEDA9119E9FFCB0047DDC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FEDA8F19E9FFCB0047DDC0 /* LaunchScreen.xib */; };
 		94FEDA9D19E9FFCB0047DDC0 /* FB_Albums_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDA9C19E9FFCB0047DDC0 /* FB_Albums_ViewerTests.m */; };
+		94FEDAA819EA1DCA0047DDC0 /* AlbumsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDAA719EA1DCA0047DDC0 /* AlbumsListViewController.m */; };
+		94FEDAB019EADF280047DDC0 /* AlbumsParallaxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDAAF19EADF280047DDC0 /* AlbumsParallaxTableViewCell.m */; };
+		94FEDABE19EB0D360047DDC0 /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDABD19EB0D360047DDC0 /* ImageController.m */; };
+		94FEDAC219EB39CB0047DDC0 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDAC119EB39CB0047DDC0 /* AlbumModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +31,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A41B2D97CDE1138CE3FC455 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D147B667214FE8EC705773E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6403DC2BDC41B456BF28884A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FEDA7D19E9FFCB0047DDC0 /* FB Albums Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FB Albums Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FEDA8119E9FFCB0047DDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FEDA8219E9FFCB0047DDC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94FEDA8419E9FFCB0047DDC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94FEDA8519E9FFCB0047DDC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94FEDA8719E9FFCB0047DDC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94FEDA8819E9FFCB0047DDC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94FEDA8719E9FFCB0047DDC0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		94FEDA8819E9FFCB0047DDC0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		94FEDA8B19E9FFCB0047DDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FEDA8D19E9FFCB0047DDC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		94FEDA9019E9FFCB0047DDC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		94FEDA9619E9FFCB0047DDC0 /* FB Albums ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FB Albums ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FEDA9B19E9FFCB0047DDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FEDA9C19E9FFCB0047DDC0 /* FB_Albums_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FB_Albums_ViewerTests.m; sourceTree = "<group>"; };
+		94FEDAA619EA1DCA0047DDC0 /* AlbumsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsListViewController.h; sourceTree = "<group>"; };
+		94FEDAA719EA1DCA0047DDC0 /* AlbumsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsListViewController.m; sourceTree = "<group>"; };
+		94FEDAAE19EADF280047DDC0 /* AlbumsParallaxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsParallaxTableViewCell.h; sourceTree = "<group>"; };
+		94FEDAAF19EADF280047DDC0 /* AlbumsParallaxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsParallaxTableViewCell.m; sourceTree = "<group>"; };
+		94FEDABC19EB0D360047DDC0 /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageController.h; sourceTree = "<group>"; };
+		94FEDABD19EB0D360047DDC0 /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageController.m; sourceTree = "<group>"; };
+		94FEDAC019EB39CB0047DDC0 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		94FEDAC119EB39CB0047DDC0 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
+		94FEDAC319EB3EBA0047DDC0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860BEB29D308D9363EEB1F8D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01DAF3D0159D96CD50924254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D147B667214FE8EC705773E /* Pods.debug.xcconfig */,
+				1A41B2D97CDE1138CE3FC455 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		94FEDA7419E9FFCB0047DDC0 = {
 			isa = PBXGroup;
 			children = (
 				94FEDA7F19E9FFCB0047DDC0 /* FB Albums Viewer */,
 				94FEDA9919E9FFCB0047DDC0 /* FB Albums ViewerTests */,
 				94FEDA7E19E9FFCB0047DDC0 /* Products */,
+				01DAF3D0159D96CD50924254 /* Pods */,
+				A4BAFEC9FDF93C09E3621B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +110,12 @@
 			children = (
 				94FEDA8419E9FFCB0047DDC0 /* AppDelegate.h */,
 				94FEDA8519E9FFCB0047DDC0 /* AppDelegate.m */,
-				94FEDA8719E9FFCB0047DDC0 /* ViewController.h */,
-				94FEDA8819E9FFCB0047DDC0 /* ViewController.m */,
+				94FEDABF19EB39B30047DDC0 /* Model */,
+				94FEDABB19EB0CE70047DDC0 /* Controllers */,
+				94FEDAB119EAF8AD0047DDC0 /* Login */,
+				94FEDAB219EAF8B80047DDC0 /* Albums List */,
 				94FEDA8A19E9FFCB0047DDC0 /* Main.storyboard */,
 				94FEDA8D19E9FFCB0047DDC0 /* Images.xcassets */,
-				94FEDA8F19E9FFCB0047DDC0 /* LaunchScreen.xib */,
 				94FEDA8019E9FFCB0047DDC0 /* Supporting Files */,
 			);
 			path = "FB Albums Viewer";
@@ -96,6 +124,7 @@
 		94FEDA8019E9FFCB0047DDC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94FEDAC319EB3EBA0047DDC0 /* PrefixHeader.pch */,
 				94FEDA8119E9FFCB0047DDC0 /* Info.plist */,
 				94FEDA8219E9FFCB0047DDC0 /* main.m */,
 			);
@@ -119,6 +148,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		94FEDAB119EAF8AD0047DDC0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				94FEDA8719E9FFCB0047DDC0 /* LoginViewController.h */,
+				94FEDA8819E9FFCB0047DDC0 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		94FEDAB219EAF8B80047DDC0 /* Albums List */ = {
+			isa = PBXGroup;
+			children = (
+				94FEDAB319EAF8C20047DDC0 /* Cells */,
+				94FEDAA619EA1DCA0047DDC0 /* AlbumsListViewController.h */,
+				94FEDAA719EA1DCA0047DDC0 /* AlbumsListViewController.m */,
+			);
+			name = "Albums List";
+			sourceTree = "<group>";
+		};
+		94FEDAB319EAF8C20047DDC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				94FEDAAE19EADF280047DDC0 /* AlbumsParallaxTableViewCell.h */,
+				94FEDAAF19EADF280047DDC0 /* AlbumsParallaxTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		94FEDABB19EB0CE70047DDC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94FEDABC19EB0D360047DDC0 /* ImageController.h */,
+				94FEDABD19EB0D360047DDC0 /* ImageController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		94FEDABF19EB39B30047DDC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94FEDAC019EB39CB0047DDC0 /* AlbumModel.h */,
+				94FEDAC119EB39CB0047DDC0 /* AlbumModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A4BAFEC9FDF93C09E3621B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6403DC2BDC41B456BF28884A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FEDAA019E9FFCB0047DDC0 /* Build configuration list for PBXNativeTarget "FB Albums Viewer" */;
 			buildPhases = (
+				D54424400F7C0B089309BDBF /* Check Pods Manifest.lock */,
 				94FEDA7919E9FFCB0047DDC0 /* Sources */,
 				94FEDA7A19E9FFCB0047DDC0 /* Frameworks */,
 				94FEDA7B19E9FFCB0047DDC0 /* Resources */,
+				49B96211DC64ABBA79593B01 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94FEDA8C19E9FFCB0047DDC0 /* Main.storyboard in Resources */,
-				94FEDA9119E9FFCB0047DDC0 /* LaunchScreen.xib in Resources */,
 				94FEDA8E19E9FFCB0047DDC0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +298,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49B96211DC64ABBA79593B01 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54424400F7C0B089309BDBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94FEDA7919E9FFCB0047DDC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FEDA8919E9FFCB0047DDC0 /* ViewController.m in Sources */,
+				94FEDAA819EA1DCA0047DDC0 /* AlbumsListViewController.m in Sources */,
+				94FEDA8919E9FFCB0047DDC0 /* LoginViewController.m in Sources */,
+				94FEDAB019EADF280047DDC0 /* AlbumsParallaxTableViewCell.m in Sources */,
 				94FEDA8619E9FFCB0047DDC0 /* AppDelegate.m in Sources */,
 				94FEDA8319E9FFCB0047DDC0 /* main.m in Sources */,
+				94FEDABE19EB0D360047DDC0 /* ImageController.m in Sources */,
+				94FEDAC219EB39CB0047DDC0 /* AlbumModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +371,6 @@
 				94FEDA8B19E9FFCB0047DDC0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		94FEDA8F19E9FFCB0047DDC0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94FEDA9019E9FFCB0047DDC0 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,9 +454,13 @@
 		};
 		94FEDAA119E9FFCB0047DDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D147B667214FE8EC705773E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "FB Albums Viewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +468,13 @@
 		};
 		94FEDAA219E9FFCB0047DDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A41B2D97CDE1138CE3FC455 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = "FB Albums Viewer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +533,7 @@
 				94FEDAA219E9FFCB0047DDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94FEDAA319E9FFCB0047DDC0 /* Build configuration list for PBXNativeTarget "FB Albums ViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +542,7 @@
 				94FEDAA519E9FFCB0047DDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
