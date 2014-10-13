@@ -17,6 +17,7 @@
 
 @implementation ImageController
 
+//Singleton of sorts
 + (instancetype)sharedImageController
 {
     static ImageController *sharedImageController;
@@ -38,7 +39,7 @@
     return self;
 }
 
-
+//Load an image either from local cache(preferred) or from network
 - (void)loadImageWithURL:(NSString *)imageURL andCompletionBlock:(void (^)(UIImage *image))completionBlock
 {
     if([_imagesCache objectForKey:imageURL])
@@ -48,11 +49,12 @@
     }
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,  0);
-    
+    //throw the data being loaded onto a different thread
     dispatch_async(queue, ^{
         NSURL *URL = [NSURL URLWithString:imageURL];
         NSData *imageData = [NSData dataWithContentsOfURL:URL];
         UIImage *imageToUse = [UIImage imageWithData:imageData];
+        //back on main thread to ensure ui updates happen as they should
         dispatch_sync(dispatch_get_main_queue(), ^{
             if(!imageToUse) return;
             

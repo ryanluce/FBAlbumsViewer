@@ -11,6 +11,7 @@
 
 @implementation AlbumModel
 
+//helper method to get image url based on the album id
 - (NSString *)albumImageURL
 {
     NSString *imageUrl = [NSString stringWithFormat:

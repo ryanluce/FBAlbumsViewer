@@ -42,6 +42,7 @@
     
 }
 
+//add the image and resize it to the width of the screen.
 - (void)setupImage:(UIImage *)image
 {
     if(!_imageView)
@@ -71,8 +72,10 @@
     
 }
 
+//more parallax magic
 - (void)updateParallax:(CGFloat)parallaxValue
 {
+    //set this so when the cell is created and the image hasn't loaded, the cell has an initial value to go to.
     _lastParallaxValue = parallaxValue;
     CGRect imageViewFrame = _imageView.frame;
     CGFloat endValue = [self parallaxEndValue];
@@ -83,12 +86,13 @@
 
 - (CGFloat)parallaxStartValue
 {
+    //the top of the image rooted at the top of the cell
     return 0.f;
 }
 
 - (CGFloat)parallaxEndValue
 {
-    //
+    //the bottom of the image rooted at the bottom of the cell
     return -_imageView.frame.size.height+self.frame.size.height;
 }
 

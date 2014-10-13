@@ -54,10 +54,12 @@
 
 - (void)reloadAllData
 {
+    //Give the user a visual notification that the app is loading data
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:17.f];
     hud.labelText = @"Loading...";
     
+    //load all the albums for the logged in user
     NSString *graphPath = @"/me/albums";
     [FBRequestConnection startWithGraphPath:graphPath
                                  parameters:nil
@@ -66,6 +68,7 @@
         NSDictionary *resultDictionary = (NSDictionary *)result;
         NSMutableArray *facebookData = [NSMutableArray arrayWithArray:[resultDictionary objectForKey:@"data"]];
         _dataSource = [[NSMutableArray alloc] initWithCapacity:facebookData.count];
+        //iterate through every album
         for(NSDictionary *tempDictionary in facebookData)
         {
             AlbumModel *temporaryAlbumModel = [[AlbumModel alloc] init];
@@ -76,6 +79,7 @@
             [_dataSource addObject:temporaryAlbumModel];
         }
         [_tableView reloadData];
+        //make sure all images are pre scrolled
         [self scrollViewDidScroll:_tableView];
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     }];
@@ -108,13 +112,16 @@
 }
 
 #pragma mark - scrollview delegate
-
+//magic for the parallax effect
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     for(AlbumsParallaxTableViewCell *cell in _tableView.visibleCells)
     {
+        //want the y value for the cell in perspective of self.view.
         CGRect frameInRect = [_tableView convertRect:cell.frame toView:self.view];
+        //Want the parallax effect to end at the nav bar
         CGFloat navigationBarHeight = self.navigationController.navigationBar.frame.size.height;
+        
         CGFloat cellYValue = frameInRect.origin.y - navigationBarHeight;
         CGFloat tableHeight = _tableView.frame.size.height - navigationBarHeight;
         CGFloat parallaxValue = cellYValue/tableHeight;
