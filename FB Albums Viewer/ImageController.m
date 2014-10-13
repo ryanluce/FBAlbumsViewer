@@ -54,6 +54,8 @@
         NSData *imageData = [NSData dataWithContentsOfURL:URL];
         UIImage *imageToUse = [UIImage imageWithData:imageData];
         dispatch_sync(dispatch_get_main_queue(), ^{
+            if(!imageToUse) return;
+            
             [_imagesCache setObject:imageToUse
                             forKey:imageURL];
             completionBlock(imageToUse);

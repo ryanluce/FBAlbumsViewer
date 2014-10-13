@@ -112,8 +112,9 @@
     for(AlbumsParallaxTableViewCell *cell in _tableView.visibleCells)
     {
         CGRect frameInRect = [_tableView convertRect:cell.frame toView:self.view];
-        CGFloat cellYValue = frameInRect.origin.y;
-        CGFloat tableHeight = _tableView.frame.size.height;
+        CGFloat navigationBarHeight = self.navigationController.navigationBar.frame.size.height;
+        CGFloat cellYValue = frameInRect.origin.y - navigationBarHeight;
+        CGFloat tableHeight = _tableView.frame.size.height - navigationBarHeight;
         CGFloat parallaxValue = cellYValue/tableHeight;
         [cell updateParallax:parallaxValue];
     }

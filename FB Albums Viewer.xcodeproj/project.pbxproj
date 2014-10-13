@@ -85,6 +85,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		94271AA619EB489F005138E2 /* Images List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Images List";
+			sourceTree = "<group>";
+		};
 		94FEDA7419E9FFCB0047DDC0 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +120,7 @@
 				94FEDABF19EB39B30047DDC0 /* Model */,
 				94FEDABB19EB0CE70047DDC0 /* Controllers */,
 				94FEDAB119EAF8AD0047DDC0 /* Login */,
+				94271AA619EB489F005138E2 /* Images List */,
 				94FEDAB219EAF8B80047DDC0 /* Albums List */,
 				94FEDA8A19E9FFCB0047DDC0 /* Main.storyboard */,
 				94FEDA8D19E9FFCB0047DDC0 /* Images.xcassets */,

@@ -70,10 +70,10 @@
 - (void)updateParallax:(CGFloat)parallaxValue
 {
     CGRect imageViewFrame = _imageView.frame;
-    imageViewFrame.origin.y = ([self parallaxEndValue] - [self parallaxStartValue]) * parallaxValue +
-                                                                            [self parallaxEndValue];
+    CGFloat endValue = [self parallaxEndValue];
+    CGFloat startValue = [self parallaxStartValue];
+    imageViewFrame.origin.y = (endValue - startValue) * parallaxValue;
     _imageView.frame = imageViewFrame;
-    _imageView.alpha = parallaxValue;
 }
 
 - (CGFloat)parallaxStartValue
