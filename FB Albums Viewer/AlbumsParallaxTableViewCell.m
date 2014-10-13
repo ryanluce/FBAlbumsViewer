@@ -15,6 +15,7 @@
     IBOutlet UILabel *_albumNameLabel;
     IBOutlet UILabel *_imageCountLabel;
     UIImageView *_imageView;
+    CGFloat _lastParallaxValue;
 }
 @end
 
@@ -51,13 +52,15 @@
         _imageView.image = image;
     }
     
-    CGFloat imageAspectRatio = image.size.height/image.size.width;
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat imageAspectRatio = screenWidth/image.size.width;
     CGRect imageViewFrame = CGRectMake(0,
                                        0,
-                                       320,
+                                       screenWidth,
                                        image.size.height * imageAspectRatio);
     _imageView.frame = imageViewFrame;
     _imageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self updateParallax:_lastParallaxValue];
     
     if(!_imageView.superview)
     {
@@ -65,14 +68,16 @@
                belowSubview:_albumNameLabel];
     }
     
+    
 }
 
 - (void)updateParallax:(CGFloat)parallaxValue
 {
+    _lastParallaxValue = parallaxValue;
     CGRect imageViewFrame = _imageView.frame;
     CGFloat endValue = [self parallaxEndValue];
     CGFloat startValue = [self parallaxStartValue];
-    imageViewFrame.origin.y = (endValue - startValue) * parallaxValue;
+    imageViewFrame.origin.y = (endValue - startValue) * parallaxValue + startValue;
     _imageView.frame = imageViewFrame;
 }
 
@@ -84,7 +89,7 @@
 - (CGFloat)parallaxEndValue
 {
     //
-    return -_imageView.image.size.height+self.frame.size.height;
+    return -_imageView.frame.size.height+self.frame.size.height;
 }
 
 

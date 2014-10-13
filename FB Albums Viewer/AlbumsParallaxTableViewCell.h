@@ -14,4 +14,6 @@
 - (void)updateWithAlbumModel:(AlbumModel *)albumModel;
 //parallax value should be 0.0 to 1.0
 - (void)updateParallax:(CGFloat)parallaxValue;
+
+@property (nonatomic, assign) BOOL shouldDebug;
 @end

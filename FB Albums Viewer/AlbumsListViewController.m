@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationItem setHidesBackButton:YES];
     // Do any additional setup after loading the view.
 }
 
@@ -75,6 +76,7 @@
             [_dataSource addObject:temporaryAlbumModel];
         }
         [_tableView reloadData];
+        [self scrollViewDidScroll:_tableView];
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
     }];
 }
@@ -117,6 +119,7 @@
         CGFloat tableHeight = _tableView.frame.size.height - navigationBarHeight;
         CGFloat parallaxValue = cellYValue/tableHeight;
         [cell updateParallax:parallaxValue];
+
     }
 }
 
